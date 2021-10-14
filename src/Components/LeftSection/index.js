@@ -1,8 +1,9 @@
 import React from 'react'
-import styled from 'styled-components';
-import { FaWhatsapp, FaGithub, FaEnvelope, FaLinkedinIn, FaMapMarkerAlt } from "react-icons/fa";
+import {Main, Section, Content, Profile, ContactInfo, Skills, ProgressBar, 
+ProgressBarJs, ProgressBarHC, ProgressBarRT, ProgressBarJ, ReferencesSection   } from './styles'
+import { FaWhatsapp, FaGithub, FaEnvelope, FaLinkedinIn, FaMapMarkerAlt, FaFax } from "react-icons/fa";
 import Eu from '../../images/AJAP2.jpg'
-import RightSection from './PageCentro';
+import RightSection from './RightSection';
 
 const LeftSection = () => {
     return (
@@ -53,15 +54,41 @@ const LeftSection = () => {
                                 <ProgressBarJs>
                                 </ProgressBarJs>
                             </ProgressBar>
-
-                            <p>Html</p>
+                        </li>
+                        <li>
+                            <p>Html/CSS</p>
                             <ProgressBar>
-                                <ProgressBarJs>
-                                </ProgressBarJs>
+                                <ProgressBarHC>
+                                </ProgressBarHC>
+                            </ProgressBar>
+                        </li>
+                        <li>
+                            <p>React</p>
+                            <ProgressBar>
+                                <ProgressBarRT>
+                                </ProgressBarRT>
+                            </ProgressBar>
+                        </li>
+                        <li>
+                            <p>JEST</p>
+                            <ProgressBar>
+                                <ProgressBarJ>
+                                </ProgressBarJ>
                             </ProgressBar>
                         </li>
                     </ul>
                 </Skills>
+                <ReferencesSection>
+                    <h3>Referencias</h3>
+                    <h6>Zup Innovation</h6>
+                    <p>Estagiaria Front End</p>
+                    <ul>
+                        <li>
+                            <i><FaFax /></i>
+                            <a href="https://www.zup.com.br/contato">Contato ZUP</a>
+                        </li>
+                    </ul>
+                </ReferencesSection>
             </Content>
         </Section>
         <RightSection />
@@ -70,122 +97,3 @@ const LeftSection = () => {
 }
 
 export default LeftSection;
-const Main = styled.div `
-    min-height: 100vh;
-    width: 80%;
-    margin: 2rem auto;
-    display: grid;
-    grid-template-columns: repeat(7, 1fr);
-`
-const Section = styled.div `
-    grid-column: span 2;
-    height: 100%;
-    background-color: #00324A;
-    a {
-        color: #ccc;
-    }
-`
-const Content = styled.div`
-    padding: 2rem 3rem;
-    
-`
-
-const Profile = styled.div`
-    width: 100%;
-    border-bottom: 1px solid #002333;
-    img {
-        width: 100%;
-        text-align: center;
-        width: 100%;
-        border-radius: 50%;
-        border: 7px solid #002333;
-        width: 200px;
-        height: 200px;
-    }
-
-    p {
-        font-size: 1.2rem;
-        color: #94D9EA;
-        text-align: center;
-        text-transform: uppercase;
-        letter-spacing: 1px;
-        padding-bottom: 1rem;
-    }
-    h2 {
-        font-size: 2rem;
-        color: white;
-        text-align: center;
-        text-transform: uppercase;
-        letter-spacing: 1px;
-        padding: 1.2rem 0;
-    }
-`
-
-const ContactInfo = styled.div`
-    ul {
-        padding-top: 2rem;
-    }
-    li {
-        padding: .4rem 0;
-        display: flex;
-        align-items: center;
-        color: #718096;
-    }
-
-    a {
-        color: #718096;
-    }
-
-    i {
-     padding-right: 1rem;
-     font-size: 1.2rem;
-     color: #2D9CDB;
-    }
-    h3 {
-    font-size: 1.8rem;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    color: #f7f7f7ec;
-    padding-top: 3rem;
-    }
-`
-
-const Skills = styled.div`
-
-    h3 {
-        font-size: 1.8rem;
-        text-transform: uppercase;
-        letter-spacing: 1px;
-        color: #f7f7f7ec;
-        padding-top: 3rem;
-    }
-    ul {
-        padding-top: 2rem;
-    }
-
-    li {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        padding: .4rem 0;
-    }
-    p {
-        text-transform: uppercase;
-        color: #f7f7f7;
-        font-size: 1rem;
-    }
-
-`
-const ProgressBar = styled.div`
-    width: 100%;
-    height: .4rem;
-    background-color: #2f81ed5b;
-    position: relative;
-    border-radius: 12px;
-`
-const ProgressBarJs = styled.div`
-    height: 100%;
-    position: absolute;
-    left: 0;
-    background-color: #2D9CDB;
-    width: 40%;
-`
