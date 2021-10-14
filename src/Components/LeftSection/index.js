@@ -3,7 +3,7 @@ import {Main, Section, Content, Profile, ContactInfo, Skills, ProgressBar,
 ProgressBarJs, ProgressBarHC, ProgressBarRT, ProgressBarJ, ReferencesSection   } from './styles'
 import { FaWhatsapp, FaGithub, FaEnvelope, FaLinkedinIn, FaMapMarkerAlt, FaFax } from "react-icons/fa";
 import Eu from '../../images/AJAP2.jpg'
-import RightSection from './RightSection';
+import RightSection from '../RightSection/index';
 
 const LeftSection = () => {
     return (

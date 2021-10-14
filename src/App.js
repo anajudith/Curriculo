@@ -1,4 +1,3 @@
-import react from 'react';
 import './App.css';
 import LeftSection from './Components/LeftSection';
 // import RightSection from './Components/LeftSection/PageCentro';
